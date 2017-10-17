@@ -1,0 +1,45 @@
+<div class="sub-power">
+  <h4>{{beingName}} Component</h4>
+  <h5 *ngIf='beingName == "Human" && power != null'>
+    Power Level: {{power * 1}}
+  </h5>
+  <h5 *ngIf='beingName == "Saiyan" && power != null'>
+    Power Level: {{power * 10}}
+  </h5>
+    
+  <h5 *ngIf='beingName == "SuperSaiyan" && power != null'>
+    Power Level: {{power * 90}}
+  </h5>
+    
+  <h5 *ngIf='beingName == "SuperSaiyanTwo" && power != null'>
+    Power Level: {{power * 150}} 
+    <h3 *ngIf='power * 150 >= 9000 && power * 150 <= 20000'>
+        Over 9000!
+    </h3>
+  </h5>
+    
+  <h5 *ngIf='beingName == "SuperSaiyanThree" && power != null'>
+    Power Level: {{power * 250}}
+    <h3 *ngIf='power * 250 >= 9000 && power * 250 <= 20000'>
+        Over 9000!
+    </h3>
+    <h3 *ngIf='power * 250  >= 20000 && power * 250 <= 50000'>
+        Superlative!
+    </h3>
+  </h5>
+    
+  <h5 *ngIf='beingName == "SuperSaiyanFour" && power != null'>
+    Power Level: {{power * 500}}
+    <h3 *ngIf='power * 500 >= 9000 && power * 500 <= 20000'>
+        Over 9000!
+    </h3>
+    <h3 *ngIf='power * 500  >= 20000 && power * 500 <= 50000 -1'>
+        Superlative!
+    </h3>
+    <h3 *ngIf='power * 500  >= 50000'>
+        The One
+    </h3>
+  </h5>
+    
+</div>
+  
